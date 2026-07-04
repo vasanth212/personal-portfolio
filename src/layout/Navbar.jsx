@@ -7,7 +7,6 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
-  { href: "#testimonials", label: "Testimonials" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -32,7 +31,7 @@ useEffect(()=>{
 },[])
 
   return (
-    <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3":"bg-transparent py-5"}  z-50`}>
+    <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${isScrolled ? "glass-strong py-3":"bg-transparent border border-transparent py-5"}  z-50`}>
       <nav className='container mx-auto px-6 flex items-center justify-between'>
         <a href='#' className='text-xl font-bold tracking-tight hover:text-primary'>
           V@
@@ -49,11 +48,6 @@ useEffect(()=>{
             ))}
 
           </div>
-        </div>
-
-        {/* CTA button */}
-        <div className='hidden md:block'>
-          <Button size='sm'>Contact me</Button>   
         </div>
 
         {/*mobile menu button  */}
@@ -80,7 +74,6 @@ useEffect(()=>{
 
       ))}
 
-        <Button size='sm'>Contact me</Button>  
         </div>
       </div>
     )}

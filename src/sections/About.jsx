@@ -28,42 +28,26 @@ function About() {
   return (
    <section id='about' className='py-32 relative overflow-hidden'>
       <div className='container mx-auto px-6 relative z-10'>
-          <div className='grid lg:grid-cols-2 gap-16 items-center'>
+          {/* Section heading */}
+          <div className='text-center mb-16 animate-fade-in'>
+            <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase'>
+              About me
+            </span>
+          </div>
+
+          <div className='grid lg:grid-cols-2 gap-16 items-start'>
               {/* Left column */}
               <div className='space-y-8'>
-              <div className='animate-fade-in'>
-                <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase'>
-                  About me
-                </span>
-              </div>
-
-              <h2 className='text-4xl md:text-5xl font-bold leading-tight animate-fade-in delay-1 text-secondary-foreground'>
-                Building the future,
-                <span className='font-serif italic font-normal text-white'> one component at a time.
-                </span>
-              </h2>
 
               <div className='space-y-4 text-muted-foreground animate-fade-in delay-2 '>
                 <p>
-                  My journey into web development began with a fascination for the intersection of logic and creativity. Over the years, I have honed my skills in building highly interactive and responsive user interfaces using modern frameworks like React and Next.js. 
-                </p>
-
-                <p>
-                I take pride in my "Performance First" mindset,
-                ensuring that every application I build is optimized for speed,
-                accessibility, and SEO. In an era where every millisecond counts,
-                I focus on minimizing layout shifts and optimizing asset delivery
-                to create seamless digital experiences. 
-                </p>
-
-                <p>
-                Beyond the code, I am a firm believer in the power of collaboration and continuous learning. I enjoy working closely with designers and stakeholders to translate ambitious ideas into tangible products that solve real-world problems.
+                  Self-taught frontend developer with a strong aptitude for learning new technologies. Proficient in modern JavaScript, React, and responsive web design. Seeking an entry-level frontend developer role to apply technical skills and passion for building intuitive, user-focused web applications.
                 </p>
               </div>
 
               <div className='glass rounded-2xl p-6 glow-border animate-fade-in delay-3'>
                 <p className='text-lg font-medium italic text-foreground'>
-                  "My mission is to push the boundaries of the modern web using React and cutting-edge frontend technologies to create high-speed, future-proof interfaces that solve real-world problems."
+                  "My focus is on writing clean, maintainable code that solves problems efficiently. I believe that good software is defined by its usability and its ability to scale alongside the needs of the user."
                 </p>
               </div>
           </div>
@@ -89,10 +73,6 @@ function About() {
 
           </div>
       </div>
-
-
-
-
 
 
 

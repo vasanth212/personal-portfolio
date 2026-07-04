@@ -1,12 +1,11 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, ArrowUp } from 'lucide-react';
 
 // Reusing your navLinks for consistency
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
-  { href: "#testimonials", label: "Testimonials" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -45,10 +44,10 @@ const Footer = () => {
 
           {/* Social Links & Back to Top */}
           <div className="flex items-center gap-4">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="p-2 glass rounded-full hover:text-primary transition-all">
+            <a href="https://github.com/vasanth212" target="_blank" rel="noreferrer" className="p-2 glass rounded-full hover:text-primary transition-all">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-2 glass rounded-full hover:text-primary transition-all">
+            <a href="https://linkedin.com/in/vasanth212" target="_blank" rel="noreferrer" className="p-2 glass rounded-full hover:text-primary transition-all">
               <Linkedin size={20} />
             </a>
             <button 

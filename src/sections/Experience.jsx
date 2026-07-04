@@ -2,27 +2,35 @@ import React from 'react'
 
 const experience = [
   {
-    period: "2023 - Present",
-    role: "Junior Front-End Developer",
-    company: "TechFlow Solutions",
-    description: "Lead the migration of legacy jQuery modules to modern React components. Collaborate with UX designers to implement pixel-perfect, accessible interfaces and optimize web performance, resulting in a 20% increase in Lighthouse scores.",
-    technologies: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
-    current: true
-  },
-  {
-    period: "2022 - 2023",
-    role: "Web Developer Intern",
-    company: "BrightPixel Agency",
-    description: "Assisted in building responsive landing pages for various clients. Integrated RESTful APIs and managed global state using Redux. Conducted cross-browser testing and fixed UI bugs to ensure a seamless user experience.",
-    technologies: ["JavaScript", "React", "Sass", "Redux"],
+    period: "Oct 2023 – Oct 2025",
+    role: "Sales",
+    company: "Super Saravana Stores — Madurai",
+    description: "",
+    technologies: [],
     current: false
   },
   {
-    period: "2021 - 2022",
-    role: "Freelance UI Developer",
-    company: "Self-Employed",
-    description: "Developed custom WordPress themes and static sites for small businesses. Focused on SEO optimization and mobile-first design principles. Managed client requirements and delivered projects within strict deadlines.",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Figma"],
+    period: "Apr 2021 – Oct 2023",
+    role: "Data Entry",
+    company: "Prisi Smart Service — Madurai",
+    description: "Performed data entry work on Amazon MTurk and Plate IQ.",
+    technologies: [],
+    current: false
+  },
+  {
+    period: "Mar 2019 – Apr 2021",
+    role: "Epublishing Trainee",
+    company: "Genv — Madurai",
+    description: "Used Adobe Illustrator to recreate charts, graphs, and artwork for digital publishing.",
+    technologies: [],
+    current: false
+  },
+  {
+    period: "Jun 2018 – Feb 2019",
+    role: "NEEM Trainee",
+    company: "TEAL — Hosur",
+    description: "",
+    technologies: [],
     current: false
   }
 ];
@@ -40,7 +48,7 @@ function Experience() {
             </h2>
 
              <p className='text-muted-foreground animate-fade-in delay-2'>
-            A selection of my recent work, from complex web applications to innovative tools that solve real-world problems.
+            A timeline of my professional journey across different roles and industries.
           </p>
         </div>
 
@@ -65,13 +73,15 @@ function Experience() {
                   <span className='text-sm text-primary font-medium '>{exp.period}</span>
                   <h3 className='text-xl font-semibold mt-2'>{exp.role}</h3>
                   <p className='text-muted-foreground'>{exp.company}</p>
-                  <p className='text-sm text-muted-foreground mt-4'>{exp.description}</p>
+                  {exp.description && <p className='text-sm text-muted-foreground mt-4'>{exp.description}</p>}
+                  {exp.technologies.length > 0 && (
                   <div className={`flex flex-wrap gap-2 mt-4 ${idx % 2 === 0 ? 
                   "md:justify-end" : ""  }`}>{exp.technologies.map((tech, idx)=>(
 
                     <span key={idx} className='px-3 py-1 bg-surface text-xs rounded-full text-muted-foreground'>{tech}</span>
 
                   ))}</div>
+                  )}
                 </div>
               </div>
             </div>

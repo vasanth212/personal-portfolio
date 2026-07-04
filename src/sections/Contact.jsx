@@ -7,24 +7,24 @@ const contactInfo = [
   {
     id: 1,
     title: "Email",
-    value: "yourname@email.com",
-    link: "mailto:yourname@email.com",
+    value: "svasanth212@gmail.com",
+    link: "mailto:svasanth212@gmail.com",
     icon: <Mail className='text-primary' />,
     description: "Response within 24 hours"
   },
   {
     id: 2,
     title: "Phone",
-    value: "+1 (555) 000-0000",
-    link: "tel:+15550000000",
+    value: "6383454467",
+    link: "tel:+916383454467",
     icon: <Phone className='text-primary' />,
     description: "Mon-Fri, 9am - 5pm"
   },
   {
     id: 3,
     title: "Location",
-    value: "New York, NY",
-    link: "https://www.google.com/maps/search/New+York",
+    value: "Madurai, Tamil Nadu",
+    link: "https://www.google.com/maps/search/Madurai+Tamil+Nadu",
     icon: <MapPin className='text-primary' />,
     description: "Open to remote & relocation"
   }
@@ -86,9 +86,6 @@ function Contact() {
         {/* section header */}
         <div className='text-center mx-auto max-w-3xl mb-16'>
           <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in'>Get in touch</span>
-          <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in delay-1 text-secondary-foreground'>Let's build
-            <span className='font-serif italic font-normal text-white'> something great</span>
-          </h2>
         </div>
 
         <div className='grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto'>

@@ -3,28 +3,28 @@ import React from 'react'
 
 const projects = [
   {
-    title: "EcoShop Front-end",
-    description: "A fully responsive e-commerce interface built with React. Features dynamic product filtering, a functional shopping cart using Context API, and localized storage for persistent user sessions.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
-    tags: ["React", "Tailwind CSS", "Context API"],
-    link: "#",
-    github: "#"
+    title: "Crypto Tracker",
+    description: "React app that displays live cryptocurrency prices from the CoinGecko API. Users can browse the top 100 coins, search and sort them, and switch between grid and list views. Click into a detail page with a 7-day price chart and market stats — no sign-up or payment required.",
+    image: "/crypto-tracker.png",
+    tags: ["React", "CoinGecko API", "Chart.js", "Tailwind CSS"],
+    link: "https://crypto-tracker-vasanth6.vercel.app",
+    github: "https://github.com/vasanth212/crypto-tracker"
   },
   {
-    title: "SkyCast Weather App",
-    description: "A sleek weather dashboard that fetches real-time data from the OpenWeatherMap API. Includes dynamic background changes based on weather conditions and a 5-day forecast visualization.",
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&q=80&w=1000",
-    tags: ["JavaScript", "REST API", "CSS Grid"],
-    link: "#",
-    github: "#"
+    title: "Music Player",
+    description: "React app where users can browse songs, control playback with play/pause/skip/volume/scrub, and create custom playlists that persist in localStorage. Built with React Context for global state, React Router for navigation, and the HTML Audio API for playback. Styled with Tailwind CSS.",
+    image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&q=80&w=1000",
+    tags: ["React", "React Context", "React Router", "HTML Audio API", "Tailwind CSS"],
+    link: "https://music-player-vasanth6.vercel.app",
+    github: "https://github.com/vasanth212/music-player"
   },
   {
-    title: "TaskFlow Kanban",
-    description: "A productivity tool inspired by Trello. Allows users to create, drag-and-drop, and delete tasks across different stages. Focused heavily on DOM manipulation and smooth user interactions.",
-    image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f9d?auto=format&fit=crop&q=80&w=1000",
-    tags: ["React", "Lucide Icons", "Framer Motion"],
-    link: "#",
-    github: "#"
+    title: "Memory Card Game",
+    description: "4×4 grid card matching game built in React where players flip cards to find matching emoji pairs. Used a custom hook to separate game logic from UI components, with Tailwind CSS for styling. Tracks score and moves, and displays a win message when all pairs are found.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&q=80&w=1000",
+    tags: ["React", "Custom Hooks", "Tailwind CSS"],
+    link: "https://memory-game-vasanth6.vercel.app",
+    github: "https://github.com/vasanth212/memory-game"
   }
 ];
 
