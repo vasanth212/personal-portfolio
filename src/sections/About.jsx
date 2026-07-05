@@ -30,7 +30,7 @@ function About() {
       <div className='container mx-auto px-6 relative z-10'>
           {/* Section heading */}
           <div className='text-center mb-16 animate-fade-in'>
-            <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase'>
+            <span className='text-secondary-foreground text-lg font-medium tracking-wider uppercase'>
               About me
             </span>
           </div>

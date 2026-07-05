@@ -85,7 +85,7 @@ function Contact() {
       <div className='container mx-auto px-6 relative z-10'>
         {/* section header */}
         <div className='text-center mx-auto max-w-3xl mb-16'>
-          <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in'>Get in touch</span>
+          <span className='text-secondary-foreground text-lg font-medium tracking-wider uppercase animate-fade-in'>Get in touch</span>
         </div>
 
         <div className='grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto'>
@@ -152,7 +152,7 @@ function Contact() {
               <div>{contactInfo.map((item, idx) => (
 
 
-                <a className='bg-surface flex items-center gap-3 px-4 py-2 rounded-2xl mb-5 ' href={item.link}>
+                <a className='bg-surface flex items-center gap-3 px-4 py-2 rounded-2xl mb-5 ' href={item.link} target="_blank" rel="noopener noreferrer">
                   {item.icon}
                   <div>
                     <div className='text-muted-foreground'>{item.title}</div>

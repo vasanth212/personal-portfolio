@@ -6,14 +6,14 @@ const projects = [
     title: "Crypto Tracker",
     description: "React app that displays live cryptocurrency prices from the CoinGecko API. Users can browse the top 100 coins, search and sort them, and switch between grid and list views. Click into a detail page with a 7-day price chart and market stats — no sign-up or payment required.",
     image: "/crypto-tracker.png",
-    tags: ["React", "CoinGecko API", "Chart.js", "Tailwind CSS"],
+    tags: ["React", "CoinGecko API", "Recharts", "Tailwind CSS"],
     link: "https://crypto-tracker-vasanth6.vercel.app",
     github: "https://github.com/vasanth212/crypto-tracker"
   },
   {
     title: "Music Player",
     description: "React app where users can browse songs, control playback with play/pause/skip/volume/scrub, and create custom playlists that persist in localStorage. Built with React Context for global state, React Router for navigation, and the HTML Audio API for playback. Styled with Tailwind CSS.",
-    image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&q=80&w=1000",
+    image: "/music-player.png",
     tags: ["React", "React Context", "React Router", "HTML Audio API", "Tailwind CSS"],
     link: "https://music-player-vasanth6.vercel.app",
     github: "https://github.com/vasanth212/music-player"
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Memory Card Game",
     description: "4×4 grid card matching game built in React where players flip cards to find matching emoji pairs. Used a custom hook to separate game logic from UI components, with Tailwind CSS for styling. Tracks score and moves, and displays a win message when all pairs are found.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&q=80&w=1000",
+    image: "/memory-game.png",
     tags: ["React", "Custom Hooks", "Tailwind CSS"],
     link: "https://memory-game-vasanth6.vercel.app",
     github: "https://github.com/vasanth212/memory-game"
@@ -34,14 +34,7 @@ function Projects() {
       <div className='container mx-auto px-6 relative z-10'>
         {/* section header */}
         <div className='text-center mx-auto max-w-3xl mb-16'>
-          <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in'>Featured Work</span>
-          <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in delay-1 text-secondary-foreground'>Projects that
-            <span className='font-serif italic font-normal text-white'> make an impact.</span>
-          </h2>
-
-          <p className='text-muted-foreground animate-fade-in delay-2'>
-            A selection of my recent work, from complex web applications to innovative tools that solve real-world problems.
-          </p>
+          <span className='text-secondary-foreground text-lg font-medium tracking-wider uppercase animate-fade-in'>Featured Work</span>
         </div>
 
         {/* Projects Grid */}
@@ -56,17 +49,17 @@ function Projects() {
                   <div className='relative overflow-hidden aspect-video'>
                         <img src={project.image}
                         alt={project.title}
-                        className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110' />
+                        className='w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110' />
                         
                         <div className='absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60'/>
 
                         {/* overlay links */}
 
                         <div className='absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-                          <a href={project.link} className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all'>
+                          <a href={project.link} target="_blank" rel="noopener noreferrer" className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all'>
                             <ArrowUpRight className='w-5 h-5'/>
                           </a>
-                          <a href={project.github} className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all'>
+                          <a href={project.github} target="_blank" rel="noopener noreferrer" className='p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all'>
                             <Github className='w-5 h-5'/>
                           </a>
                         </div>

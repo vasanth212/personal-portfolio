@@ -42,12 +42,9 @@ function Experience() {
       <div className='container mx-auto px-6 relative z-10'>
         {/* section header */}
         <div className='text-center mx-auto max-w-3xl mb-16'>
-            <span className='text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in'>Career Journey</span>
-            <h2 className='text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in delay-1 text-secondary-foreground'>
-              Experience that <span className='font-serif italic font-normal text-white'>speaks volumes</span>
-            </h2>
+            <span className='text-secondary-foreground text-lg font-medium tracking-wider uppercase animate-fade-in'>Career Journey</span>
 
-             <p className='text-muted-foreground animate-fade-in delay-2'>
+             <p className='text-muted-foreground animate-fade-in delay-2 mt-4'>
             A timeline of my professional journey across different roles and industries.
           </p>
         </div>
